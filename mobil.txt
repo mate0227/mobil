@@ -16,6 +16,16 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+/////////////
+public class MainActivity extends AppCompatActivity implements SensorEventListener {
+
+    TextView displayNumberTextView;
+    TextView dangerTextView;
+    private SensorManager sensorManager;
+    private  Sensor humiditySensor;
+    float humidityValue = 0;
+//////////////
+
 public class MainActivity extends AppCompatActivity implements MainActivity1 {
 
     TextView displayTextView;
